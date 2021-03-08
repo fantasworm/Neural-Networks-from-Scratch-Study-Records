@@ -1,0 +1,9 @@
+0. Set all weights to 1, bias to 0 for all layers
+For each pair of hidden layer neurons(except the bottom pair, offsetting only):
+1. Set all weights to 1, bias to 0
+2. Set the weight(slope) for the 1st neuron
+3. Set the bias(offset, + value) for the 2nd neuron
+4. Set the weight(slope, -1) for the 2nd neuron (causing a deactivation point to occur)
+5. Set the weight(slope, -1) for the output neuron
+6. Set the bias(offset) for the 2nd neuron of the bottom pair
+7. Work on the next pair and repeat
